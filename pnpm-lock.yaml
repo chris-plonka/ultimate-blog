@@ -133,7 +133,7 @@ importers:
         specifier: ^0.1.13
         version: 0.1.13(prettier@2.8.8)
       prisma:
-        specifier: ^4.5.0
+        specifier: ^4.16.2
         version: 4.16.2
       tailwindcss:
         specifier: ^3.2.0
