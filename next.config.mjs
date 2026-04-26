@@ -8,7 +8,7 @@
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
-  
+  swcMinify: true,
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
@@ -16,7 +16,10 @@ const config = {
   images: {
     domains: [
       "lh3.googleusercontent.com",
-      "gymzplbyrknizeycdzft.supabase.co",
+      "weobxawkoxrqfkpobvty.supabase.co",
+      "cloudflare-ipfs.com",
+      "images.unsplash.com",
+      "source.unsplash.com",
     ],
   },
 };
