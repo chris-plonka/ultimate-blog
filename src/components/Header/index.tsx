@@ -8,8 +8,8 @@ import { GlobalContext } from "../../contexts/GlobalContextProvider";
 import Link from "next/link";
 
 const Header = () => {
-  const { data: SessionData, status } = useSession();
-  console.log(SessionData);
+  const { data: session, status } = useSession();
+  console.log(session);
     const { setIsWriteModalOpen } = useContext(GlobalContext);
 
   return (
