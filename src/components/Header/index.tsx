@@ -10,7 +10,7 @@ import Link from "next/link";
 const Header = () => {
   const { data: SessionData, status } = useSession();
   console.log(SessionData);
-  const { setIsWriteModalOpen } = useContext(GlobalContext);
+    const { setIsWriteModalOpen } = useContext(GlobalContext);
 
   return (
     <header className="flex h-20 w-full flex-row items-center justify-around border-b-[1px] border-gray-300 bg-white">
