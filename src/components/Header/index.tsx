@@ -8,8 +8,8 @@ import { GlobalContext } from "../../contexts/GlobalContextProvider";
 import Link from "next/link";
 
 const Header = () => {
-  const { data: session, status } = useSession();
-  console.log(session);
+  const { data: sessionData, status } = useSession();
+  console.log(sessionData);
     const { setIsWriteModalOpen } = useContext(GlobalContext);
 
   return (
@@ -54,7 +54,7 @@ const Header = () => {
       ) : (
         <div>
           <button
-            onClick={() => signIn()}
+            onClick={() => signIn("google")}
             className="flex items-center space-x-3 rounded border border-gray-200 px-4 py-2 transition hover:border-gray-900 hover:text-gray-900"
           >
             Signin
